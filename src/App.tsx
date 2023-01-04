@@ -1,11 +1,10 @@
-import Parent from "./Props/Parent";
-import GuestList from "./State/GuestList";
-import UserSearch from "./State/UserSearch";
+import EventComponent from "./Events/EventComponent";
+import UserSearch from "./Refs/UserSearch";
+
 function App() {
   return (
     <>
-      <Parent />
-      <GuestList />
+      <EventComponent />
       <UserSearch/>
     </>
   );
