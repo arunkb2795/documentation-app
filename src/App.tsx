@@ -1,11 +1,14 @@
-import EventComponent from "./Events/EventComponent";
-import UserSearch from "./Refs/UserSearch";
+
+import { Provider } from "react-redux";
+import { store } from './Redux/store'
+import RepositoriesList from "./Events/RepositoriesList";
 
 function App() {
   return (
     <>
-      <EventComponent />
-      <UserSearch/>
+      <Provider store={store}>
+        <RepositoriesList />
+      </Provider>
     </>
   );
 }
